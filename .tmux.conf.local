@@ -484,6 +484,13 @@ set -g @monokai-termcolors true
 # # /!\ do not remove the previous line
 # #     do not write below this line
 
+# Override .tmux.conf
+
 # clear both screen and history
 #bind -n C-l send-keys C-l \; run 'sleep 0.2' \; clear-history
 unbind C-l
+
+# -- display -------------------------------------------------------------------
+
+set -g base-index 0           # start windows numbering at 0
+setw -g pane-base-index 0     # make pane numbering consistent with windows
