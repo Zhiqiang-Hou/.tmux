@@ -556,3 +556,6 @@ set -g @monokai-termcolors true
 # clear both screen and history
 #bind -n C-l send-keys C-l \; run 'sleep 0.2' \; clear-history
 unbind C-l
+
+# unbind the Ctrl-\, which is set by christoomey/vim-tmux-navigator
+set -g @vim_navigator_mapping_prev ""
